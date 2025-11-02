@@ -1,0 +1,46 @@
+.features-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 140px;
+}
+
+.features-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.features-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    background-color: black;
+    border-radius: 50%;
+    padding: 14px 16px;
+}
+
+.first-text {
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 28px;
+    color: black;
+}
+
+.second-text {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: black;
+}
+
+.features-img:hover{
+    outline: 10px solid #C1C1C1;
+    transition: 0.5s;
+}

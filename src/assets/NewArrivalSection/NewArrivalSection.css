@@ -1,0 +1,145 @@
+.arrival {
+    margin-top: 140px;
+    padding-bottom: 140px;
+}
+
+.arrival-span {
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+    opacity: 1;
+    border-radius: 4px;
+    background-color: #DB4444;
+    color: #DB4444;
+}
+
+.arrival-p {
+    color: #DB4444;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.arrival-span-text {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.arrival-h1 {
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 4%;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.arrival-pls {
+    width: 570px;
+    height: 600px;
+    opacity: 1;
+    border-radius: 4px;
+    background: #000;
+    padding: 86px 30px 0 30px;
+
+}
+
+.arrival-playstation {
+    width: 511px;
+    height: 511px;
+    padding: 358px 0 0 0;
+    background-image: url('./src/assets/img/new__arrival-PS5.png');
+    background-repeat: no-repeat;
+}
+
+
+.arrival-women {
+    width: 570px;
+    height: 284px;
+    opacity: 1;
+    border-radius: 4px;
+    background-image: url('./src/assets/img/woman.png');
+    background-repeat: no-repeat;
+}
+
+.speaker-forBg {
+    background: #232323;
+    padding: 30px;
+    width: 270px;
+    height: 284px;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+.third {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 144px 55px 14px 0px;
+}
+
+.arrival-spkr {
+    background-image: url('./src/assets/img/speaker.png');
+    background-repeat: no-repeat;
+}
+
+.parfume-img {
+    background-image: url('./src/assets/img/parfume.png');
+    background-repeat: no-repeat;
+}
+
+.arrival-name {
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 3%;
+}
+
+.arrival-about {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.arrival-link {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    text-decoration: underline;
+}
+
+.arrival-texts {
+    width: 242px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.second {
+    padding: -1px 0 24px 24px;
+}
+
+.arrival-spkr-prfm{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.small-arrival{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.arrival-sections{
+    display: flex;
+    justify-content: space-between;
+}

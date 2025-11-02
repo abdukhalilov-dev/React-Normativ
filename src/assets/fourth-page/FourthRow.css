@@ -1,0 +1,89 @@
+.sales {
+    padding-bottom: 40px;
+}
+
+.sales__top {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    width: 20px;
+    height: 40px;
+    border-radius: 4px;
+    background: #DB4444;
+    margin-top: 140px;
+}
+
+.sales__top-p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #DB4444;
+}
+
+.sales__title-h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    color: black;
+    letter-spacing: 4%;
+    padding-top: 24px;
+}
+
+.sales__timer {
+    display: flex;
+    gap: 87px;
+}
+
+.sales__day-dote {
+    width: 4px;
+    height: 16px;
+    padding-left: 22px;
+}
+
+.sales__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 82px;
+}
+
+.sales__day-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: black;
+}
+
+.sales__day-timer {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 30px;
+    color: black;
+}
+
+.sales__day{
+    display: flex;
+    align-items: center;
+    padding-right: 17px;
+}
+
+.sales__title-btn{
+    display: flex;
+    gap: 8px;
+}
+
+.title-btn{
+    border-radius: 50%;
+    border: none;
+    padding: 11px;
+}
+
+.dote{
+    color: #DB4444;
+    font-size: 20px;
+}
+
+.days__owner{
+    display: flex;
+    gap: 20px;
+}

@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.products__types-texts {
+  color: black;
+}
+
+.ThirdWrapper-row {
+  display: flex;
+  align-items: center;
+  gap: 106px;
+  /* border-top: 1px solid black; */
+  /* width: 100vw; */
+  margin-left: calc(50% - 50vw);
+  padding-top: 40px;
+}
+
+.products__types {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 126px;
+}
+
+.products__types::after {
+  content: "";
+  position: absolute;
+  top: -53.5px;
+  bottom: -16px;
+  right: 0;
+  width: 1px;
+  background-color: black;
+}
+
+
+
+.for__icons {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+}
+
+.for__icons-second {
+  gap: 74px;
+}
+
+
+
+
+
+/* IPHONE */
+.slideshow{
+  width: 932px;
+}
+
+.slideshow__wrapper{
+  display: flex;
+  height: 330px;
+}
+
+.slideshow__backgorund-img img {
+  width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+.slideshow__text{
+  padding-top: 46px;
+  padding-left: 64px;
+  background: black;
+}
+
+.slide__p{
+  font-weight: 400;
+  line-height: 24px;
+  color: #f5f5f5;
+}
+
+.slide__second-p{
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.04em;
+}
+
+.slideshow__apple{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.slideshow__second-text{
+  padding-top: 20px;
+  padding-bottom: 22px;
+}
+
+.slideshow__shop{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 22px;
+}
+
+.slide__a{
+  color: #f5f5f5;
+  text-decoration: underline;
+}
+
+.slide__indicator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #000;
+  padding-bottom: 12px;
+}
+
+.slide__span{
+  width: 12px;
+  height: 12px;
+  background-color: #808080;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3 ease ;
+}
+
+.slide__active{
+  background: #DB4444;
+  border: 3px solid white;
+  box-sizing: content-box;
+}

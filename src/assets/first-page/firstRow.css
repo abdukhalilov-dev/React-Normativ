@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px; 
+    color: white;
+    position: relative;
+}
+
+.text__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.language__selector{
+    background: #000;
+    color: white;
+    border: none;
+    font-size: 14px;
+    position: absolute;
+    right: 108px;
+    top: 30%;
+}
+
+.text-a{
+    color: white;
+}

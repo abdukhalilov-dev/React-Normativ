@@ -1,0 +1,9 @@
+.product__cart{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__cart{
+    display: flex;
+    flex-direction: column;
+}
