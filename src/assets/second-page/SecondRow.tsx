@@ -23,10 +23,10 @@ function SecondRow() {
                         <Link to="/sign">
                             <li className="nav__list"><a href="#" className="nav__link">Contact</a></li>
                         </Link>
-                        <Link to="/login">
+                        <Link to="/about">
                             <li className="nav__list"><a href="#" className="nav__link">About</a></li>
                         </Link>
-                        <Link to="/wishlist">
+                        <Link to="/login">
                             <li className="nav__list"><a href="#" className="nav__link">Sign Up</a></li>
                         </Link>
                     </ul>

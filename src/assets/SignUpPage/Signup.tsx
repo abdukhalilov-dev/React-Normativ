@@ -1,10 +1,55 @@
 import './Signup.css'
+import { Link } from 'react-router-dom'
 
 
 
 function Signup() {
     return (
         <>
+            <div className="top-text-counter">
+                <Link
+                    to="/sign"
+                    className={`count-home ${location.pathname === "/sign" ? "active" : ""}`}
+                >
+                    Account
+                </Link>
+
+                <p className='count-slash'>/</p>
+
+                <Link
+                    to="/account"
+                    className={`count-home ${location.pathname === "/account" ? "active" : ""}`}
+                >
+                    My Account
+                </Link>
+
+                <p className='count-slash'>/</p>
+
+                <Link
+                    to="/wishlist"
+                    className={`count-home ${location.pathname === "/wishlist" ? "active" : ""}`}
+                >
+                    Product
+                </Link>
+
+                <p className='count-slash'>/</p>
+
+                <Link
+                    to="/counter"
+                    className={`count-home ${location.pathname === "/counter" ? "active" : ""}`}
+                >
+                    View Cart
+                </Link>
+
+                <p className='count-slash'>/</p>
+
+                <Link
+                    to="/exclusive"
+                    className={`count-cart ${location.pathname === "/exclusive" ? "active" : ""}`}
+                >
+                    CheckOut
+                </Link>
+            </div>
             <div className="SignUp">
                 <div className="sign-img">
                     <img src="./src/assets/sign-image/phone.png" alt="" />
@@ -27,12 +72,15 @@ function Signup() {
                         <button className="sign-btn">
                             <img src="./src/assets/sign-image/Icon-Google.png" alt="" />
                             Sign up with Google
-                            </button>
+                        </button>
                     </div>
 
                     <div className="account-link">
                         <p className="link">Already have account?</p>
-                        <a className="link-span">Log in</a>
+                        <Link to="/login" className="link-span">
+                            Log in
+                        </Link>
+
                     </div>
 
                 </div>

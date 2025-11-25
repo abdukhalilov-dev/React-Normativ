@@ -30,7 +30,7 @@ function NewArrivalSection() {
 
                         <div className="arrival-wmn">
                             <div className="arrival-women">
-                                <div className="arrival-texts second">
+                                <div className="arrival-texts scdd">
                                     <p className="arrival-name">PlayStation 5</p>
                                     <p className="arrival-about">Black and White version of the PS5 coming out on sale.</p>
                                     <a className="arrival-link">Shop Now</a>

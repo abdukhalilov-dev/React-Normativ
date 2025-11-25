@@ -123,8 +123,10 @@
     gap: 16px;
 }
 
-.second {
-    padding: -1px 0 24px 24px;
+.scdd {
+    /* Negative padding is invalid in CSS; use margin for negative spacing if needed */
+    margin-top: -1px !important;
+    padding: 146px 0 24px 24px !important;
 }
 
 .arrival-spkr-prfm{

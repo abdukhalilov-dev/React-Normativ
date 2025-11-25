@@ -1,9 +1,68 @@
-.product__cart{
+.product__cart {
     display: flex;
     justify-content: space-between;
 }
 
-.product__cart{
+.product__cart {
     display: flex;
     flex-direction: column;
+}
+
+.scnd__product {
+    display: flex;
+    gap: 54px;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #db4444;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.wishlist__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: black;
+}
+
+.wishlist__btn {
+    width: 223px;
+    height: 56px;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 4px;
+    border-width: 1px;
+    padding: 16px 48px;
+    background-color: white;
+}
+
+.wishlist__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+
+
+
+
+
+
+.for-you-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 16px 60px 16px;
+
 }

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './LogIn.css'
 
 
@@ -5,7 +6,54 @@ import './LogIn.css'
 function LogIn() {
     return (
         <>
+            <div className="top-text-counter">
+                <Link
+                    to="/sign"
+                    className={`count-home ${location.pathname === "/sign" ? "active" : ""}`}
+                >
+                    Account
+                </Link>
+
+                <p className='count-slash'>/</p>
+
+                <Link
+                    to="/account"
+                    className={`count-home ${location.pathname === "/account" ? "active" : ""}`}
+                >
+                    My Account
+                </Link>
+
+                <p className='count-slash'>/</p>
+
+                <Link
+                    to="/wishlist"
+                    className={`count-home ${location.pathname === "/wishlist" ? "active" : ""}`}
+                >
+                    Product
+                </Link>
+
+                <p className='count-slash'>/</p>
+
+                <Link
+                    to="/counter"
+                    className={`count-home ${location.pathname === "/counter" ? "active" : ""}`}
+                >
+                    View Cart
+                </Link>
+
+                <p className='count-slash'>/</p>
+
+                <Link
+                    to="/exclusive"
+                    className={`count-cart ${location.pathname === "/exclusive" ? "active" : ""}`}
+                >
+                    CheckOut
+                </Link>
+            </div>
             <div className="SignUp">
+
+
+
                 <div className="sign-img">
                     <img src="./src/assets/sign-image/phone.png" alt="" />
                 </div>
