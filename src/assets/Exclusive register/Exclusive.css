@@ -1,0 +1,197 @@
+.billing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputs-text {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 36px;
+    line-height: 30px;
+    letter-spacing: 4%;
+    color: black;
+}
+
+.bill-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #999999;
+}
+
+.bill-input {
+    width: 470px;
+    height: 50px;
+    opacity: 1;
+    border-radius: 4px;
+    border: none;
+    background-color: #F5F5F5;
+    padding-left: 8px;
+}
+
+.inputs-bill {
+    padding-top: 48px;
+}
+
+.text-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 32px;
+}
+
+.check-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: black;
+}
+
+.check-bill {
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    border-radius: 4px;
+    background: #DB4444;
+}
+
+.bill-checkbox {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 140px;
+}
+
+
+
+
+
+
+
+
+
+.billing-order {
+    width: 480px;
+}
+
+.order-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+
+.order-product-cost {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+
+.bill-p-img {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.bill-monitor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-padding {
+    padding-bottom: 32px;
+}
+
+.for-order {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.order-check {
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.order-check-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+
+.order-bank {
+    display: flex;
+    gap: 16px;
+}
+
+.checkbox-p-order {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cupon-input {
+    width: 300px;
+    height: 56px;
+    opacity: 1;
+    border-radius: 4px;
+    border-width: 1px;
+    padding-left: 10px;
+}
+
+.cupon-btn {
+    width: 211px;
+    height: 56px;
+    gap: 10px;
+    border-radius: 4px;
+    padding: 16px 48px;
+    background: #DB4444;
+}
+
+.place-order-btn {
+    width: 190px;
+    height: 56px;
+    opacity: 1;
+    gap: 10px;
+    border-radius: 4px;
+    padding: 16px 48px;
+    background: #DB4444;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.order-cupon-code {
+    display: flex;
+    gap: 16px;
+}
+
+
+
+.top-text-counter .count-home,
+.top-text-counter .count-cart {
+    color: #555;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 120ms ease;
+}
+
+/* Faqat bosilganda (aktiv sahifada) chiziq chiqadi */
+.top-text-counter .active {
+    color: #000;
+    text-decoration: underline;
+}
+
+.top-text-counter .count-slash {
+    margin: 0 6px;
+    color: #777;
+}
+

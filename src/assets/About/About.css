@@ -1,0 +1,37 @@
+.about-img {
+    display: flex;
+    justify-content: end;
+    margin-right: -120px;
+}
+
+.about-our {
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 54px;
+    line-height: 64px;
+    letter-spacing: 6%;
+    color: black;
+}
+
+.about-text {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 26px;
+    color: black;
+}
+
+.about-img-text{
+    display: flex;
+    padding-bottom: 140px;
+    gap: 227px;
+    align-items: center;
+}
+
+.own-about-p{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 40px;
+    width: 468px;
+}

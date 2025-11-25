@@ -1,0 +1,132 @@
+.left-text {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+
+.about-left-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7F7F7F;
+}
+
+.about-left {
+    padding-top: 16px;
+    padding-bottom: 24px;
+    padding-left: 36px;
+}
+
+.about-left-text:hover {
+    color: #DB4444;
+    cursor: pointer;
+}
+
+.account-acc {
+    color: black;
+}
+
+.name-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+
+.right-text {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 28px;
+    color: #DB4444;
+}
+
+.name-input {
+    width: 330px;
+    height: 50px;
+    opacity: 1;
+    border-radius: 4px;
+    background-color: #F5F5F5;
+    border: none;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7A7A7A;
+}
+
+.name-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+
+.right-top-inputs {
+    display: flex;
+    gap: 50px;
+}
+
+.bottom-inputs {
+    width: 710px;
+    height: 50px;
+    opacity: 1;
+    border-radius: 4px;
+    background-color: #F5F5F5;
+    border: none;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7A7A7A;
+    margin-top: 8px;
+}
+
+.account-save-btn {
+    width: 214px;
+    height: 56px;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 4px;
+    padding: 16px 48px;
+    border: none;
+    background-color: #DB4444;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+.account-cancel-btn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    background-color: white;
+}
+
+.account-btns {
+    display: flex;
+    justify-content: end;
+    gap: 32px;
+    padding-top: 24px;
+}
+
+.account-right-side {
+    width: 870px;
+    height: 630px;
+    opacity: 1;
+    border-radius: 4px;
+    box-shadow: 0px 1px 13px 0px #0000000D;
+    padding: 40px 80px;
+}
+
+.account-left-right-sides{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
