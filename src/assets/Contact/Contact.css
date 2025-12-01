@@ -1,0 +1,145 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 140px;
+}
+
+.call-to-us-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 31px;
+    background: #DB4444;
+}
+
+.call-to-us-p {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+}
+
+.call-to-us-text {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: black;
+}
+
+.call-to-us {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.call-to-us-about {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #7F7F7F;
+}
+
+.write {
+    padding-top: 32px;
+    border-bottom: none;
+}
+
+.call-page {
+    width: 270px;
+}
+
+.Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 340px;
+    height: 457px;
+    box-shadow: 0px 1px 13px 0px #0000000D;
+    margin-bottom: 140px;
+}
+
+
+
+
+
+.userInputs {
+    width: 235px;
+    height: 50px;
+    opacity: 1;
+    border-radius: 4px;
+    background-color: #F5F5F5;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7A7A7A;
+    border: none;
+    border-radius: 4px;
+}
+
+.about-user-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 32px;
+    margin-top: 40px;
+}
+
+.contact-user {
+    width: 800px;
+    box-shadow: 0px 1px 13px 0px #0000000D;
+}
+
+.userMessage {
+    width: 737px;
+    height: 207px;
+    opacity: 1;
+    border-radius: 4px;
+    background-color: #F5F5F5;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7A7A7A;
+    padding-left: 16px;
+    padding-bottom: 170px;
+    padding-top: 13px;
+    border-radius: 4px;
+    border: none;
+}
+
+.sendBtn {
+    width: 215px;
+    height: 56px;
+    opacity: 1;
+    border-radius: 4px;
+    padding: 16px 48px;
+    gap: 10px;
+    background: #DB4444;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.user-message{
+    display: flex;
+    justify-content: center;
+}
+
+.send-btn{
+    display: flex;
+    justify-content: end;
+    padding-right: 32px;
+    padding-top: 32px;
+    padding-bottom: 40px;
+}
