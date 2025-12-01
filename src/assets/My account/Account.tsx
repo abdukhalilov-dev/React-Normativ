@@ -13,6 +13,13 @@ function Account() {
                     >
                         Account
                     </Link>
+                    <p className='count-slash'>/</p>
+                    <Link
+                        to="/contact"
+                        className={`count-home ${location.pathname === "/sign" ? "active" : ""}`}
+                    >
+                        Contact
+                    </Link>
 
                     <p className='count-slash'>/</p>
 
@@ -49,6 +56,16 @@ function Account() {
                     >
                         CheckOut
                     </Link>
+
+                    <p className='count-slash'>/</p>
+
+                    <Link
+                        to="/gaming"
+                        className={`count-cart ${location.pathname === "/exclusive" ? "active" : ""}`}
+                    >
+                        Gaming
+                    </Link>
+
                 </div>
                 <div className="account-left-right-sides">
                     <div className="account-left-side">

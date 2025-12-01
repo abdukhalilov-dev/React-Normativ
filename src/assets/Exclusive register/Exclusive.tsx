@@ -13,6 +13,14 @@ function Exclusive() {
                         >
                             Account
                         </Link>
+                        <p className='count-slash'>/</p>
+
+                        <Link
+                            to="/contact"
+                            className={`count-home ${location.pathname === "/contact" ? "active" : ""}`}
+                        >
+                            Contact
+                        </Link>
 
                         <p className='count-slash'>/</p>
 
@@ -49,6 +57,16 @@ function Exclusive() {
                         >
                             CheckOut
                         </Link>
+
+                        <p className='count-slash'>/</p>
+
+                        <Link
+                            to="/gaming"
+                            className={`count-cart ${location.pathname === "/exclusive" ? "active" : ""}`}
+                        >
+                            Gaming
+                        </Link>
+
                     </div>
                     <div className="inputs-billing">
                         <h1 className="inputs-text">Billing Details</h1>

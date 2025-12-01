@@ -1,6 +1,6 @@
 import './SecondRow.css'
 import { Link } from "react-router-dom";
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 
 function SecondRow() {
 
@@ -20,7 +20,7 @@ function SecondRow() {
                         <Link to="/">
                             <li className="nav__list"><a href="#" className="nav__link">Home</a></li>
                         </Link>
-                        <Link to="/sign">
+                        <Link to="/contact">
                             <li className="nav__list"><a href="#" className="nav__link">Contact</a></li>
                         </Link>
                         <Link to="/about">
