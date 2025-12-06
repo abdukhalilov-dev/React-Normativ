@@ -1,5 +1,15 @@
 import { useState } from "react";
-import './Product.css'
+import "./Product.css";
+
+import productImg from "../img/product__img-pls.png";
+import KlaviaturaImg from "../img/klaviatura.png";
+import KompyuterImg from "../img/kompyuter.png";
+import ChairImg from "../img/chair.png";
+import SecondChairImg from "../img/chair.png";
+
+import likeIcon from "../icons/product__like.png";
+import eyeIcon from "../icons/product__eye.png";
+import starIcon from "../icons/product__star.png";
 
 interface ProductType {
     id: number;
@@ -16,58 +26,58 @@ function Product() {
     const products: ProductType[] = [
         {
             id: 1,
-            name: "Nmadur o'yinchoq joystik",
+            name: "HAVIT HV-G92 Gamepad",
             currentPrice: "$120",
             originalPrice: "$160",
-            image: "./src/assets/img/product__img-pls.png",
+            image: productImg,
             ratingCount: "88",
         },
         {
             id: 2,
-            name: "Nmadur o'yinchoq joystik",
-            currentPrice: "$120",
-            originalPrice: "$160",
-            image: "./src/assets/img/product__img-pls.png",
-            ratingCount: "88",
+            name: "AK-900 Wired Keyboard",
+            currentPrice: "$960",
+            originalPrice: "$1160",
+            image: KlaviaturaImg,
+            ratingCount: "75",
         },
         {
             id: 3,
-            name: "Nmadur o'yinchoq joystik",
-            currentPrice: "$120",
-            originalPrice: "$160",
-            image: "./src/assets/img/product__img-pls.png",
-            ratingCount: "88",
+            name: "IPS LCD Gaming Monitor",
+            currentPrice: "$370",
+            originalPrice: "$400",
+            image:  KompyuterImg,
+            ratingCount: "99",
         },
         {
             id: 4,
-            name: "Nmadur o'yinchoq joystik",
-            currentPrice: "$120",
-            originalPrice: "$160",
-            image: "./src/assets/img/product__img-pls.png",
-            ratingCount: "88",
+            name: "S-Series Comfort Chair ",
+            currentPrice: "$374",
+            originalPrice: "$400",
+            image: ChairImg,
+            ratingCount: "99",
         },
         {
             id: 5,
-            name: "Nmadur o'yinchoq joystik",
-            currentPrice: "$120",
-            originalPrice: "$160",
-            image: "./src/assets/img/product__img-pls.png",
-            ratingCount: "88",
+            name: "S-Series Comfort Chair",
+            currentPrice: "$375",
+            originalPrice: "$400",
+            image: SecondChairImg,
+            ratingCount: "99",
         },
     ];
 
     const handleLike = (product: ProductType) => {
         let liked = JSON.parse(localStorage.getItem("likedProducts") || "[]");
-        liked.push(product)
-        localStorage.setItem("likedProducts", JSON.stringify(liked))
-        alert(`${product.name} LIKE saxifasiga qowildi`)
-    }
+        liked.push(product);
+        localStorage.setItem("likedProducts", JSON.stringify(liked));
+        alert(`${product.name} LIKE saxifasiga qowildi`);
+    };
 
     const handleAddToCart = (product: ProductType) => {
         let cart = JSON.parse(localStorage.getItem("cartProducts") || "[]");
-        cart.push(product)
-        localStorage.setItem("cartProducts", JSON.stringify(cart))
-        alert(`${product.name} CART saxifasiga qowildi`)
+        cart.push(product);
+        localStorage.setItem("cartProducts", JSON.stringify(cart));
+        alert(`${product.name} CART saxifasiga qowildi`);
     };
 
     return (
@@ -80,17 +90,11 @@ function Product() {
 
                             <div className="product__activates">
                                 <div className="like" onClick={() => handleLike(product)}>
-                                    <img
-                                        src="./src/assets/icons/product__like.png"
-                                        alt=""
-                                        className="like-icon" />
+                                    <img src={likeIcon} alt="" className="like-icon" />
                                 </div>
 
                                 <div className="eye" onClick={() => setSelectedProduct(product)}>
-                                    <img
-                                        src="./src/assets/icons/product__eye.png"
-                                        alt=""
-                                        className="eye-icon" />
+                                    <img src={eyeIcon} alt="" className="eye-icon" />
                                 </div>
                             </div>
 
@@ -102,14 +106,15 @@ function Product() {
                                 <button
                                     className="add__to-cart"
                                     onClick={() => handleAddToCart(product)}
-                                >Add To Cart
+                                >
+                                    Add To Cart
                                 </button>
                             </div>
                         </div>
 
                         <div className="cart__bottom">
                             <div className="product__name-price">
-                                <p className="name-p">{product.name}</p>
+                                <p className="product-name">{product.name}</p>
                                 <div className="product__cost">
                                     <p className="current__cost">{product.currentPrice}</p>
                                     <p className="original__cost">{product.originalPrice}</p>
@@ -117,10 +122,7 @@ function Product() {
                             </div>
 
                             <div className="product__rating">
-                                <img
-                                    src="./src/assets/icons/product__star.png"
-                                    alt="star"
-                                    className="rating-star" />
+                                <img src={starIcon} alt="star" className="rating-star" />
                                 <p className="rating-number">({product.ratingCount})</p>
                             </div>
                         </div>
@@ -142,7 +144,7 @@ function Product() {
                 </div>
             )}
         </>
-    )
+    );
 }
 
 export default Product;

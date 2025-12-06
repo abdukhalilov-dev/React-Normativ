@@ -1,5 +1,16 @@
 import { useState } from "react";
-import './Selling.css'
+import './Selling.css';
+
+// Icons import
+import likeIcon from "../icons/product__like.png";
+import eyeIcon from "../icons/product__eye.png";
+import starIcon from "../icons/product__star.png";
+
+// Product images import
+import product1Img from "../img/robe.png";
+import product2Img from "../img/gucci-bag.png";
+import product3Img from "../img/cooler.png";
+import product4Img from "../img/bookshelf.png";
 
 interface ProductType {
     id: number;
@@ -11,56 +22,56 @@ interface ProductType {
 }
 
 function Selling() {
-      const [selectedProduct, setSelectedProduct] = useState<ProductType | null>(null);
-  
-      const products: ProductType[] = [
-          {
-              id: 1,
-              name: "The north coat",
-              currentPrice: "$260",
-              originalPrice: "$360",
-              image: "./src/assets/img/our__products-jacket.png",
-              ratingCount: "88",
-          },
-          {
-              id: 2,
-              name: "Gucci duffle bag",
-              currentPrice: "$960",
-              originalPrice: "$1160",
-              image: "./src/assets/img/product__img-pls.png",
-              ratingCount: "88",
-          },
-          {
-              id: 3,
-              name: "RGB liquid CPU Cooler",
-              currentPrice: "$160",
-              originalPrice: "$170",
-              image: "./src/assets/img/product__img-pls.png",
-              ratingCount: "88",
-          },
-          {
-              id: 4,
-              name: "Small BookSelf",
-              currentPrice: "$260",
-              originalPrice: "$360",
-              image: "./src/assets/img/product__img-pls.png",
-              ratingCount: "88",
-          },
-      ];
-  
-      const handleLike = (product: ProductType) => {
-          let liked = JSON.parse(localStorage.getItem("likedProducts") || "[]");
-          liked.push(product)
-          localStorage.setItem("likedProducts", JSON.stringify(liked))
-          alert(`${product.name} LIKE saxifasiga qowildi`)
-      }
-  
-      const handleAddToCart = (product: ProductType) => {
-          let cart = JSON.parse(localStorage.getItem("cartProducts") || "[]");
-          cart.push(product)
-          localStorage.setItem("cartProducts", JSON.stringify(cart))
-          alert(`${product.name} CART saxifasiga qowildi`)
-      };
+    const [selectedProduct, setSelectedProduct] = useState<ProductType | null>(null);
+
+    const products: ProductType[] = [
+        {
+            id: 1,
+            name: "The north coat",
+            currentPrice: "$260",
+            originalPrice: "$360",
+            image: product1Img,
+            ratingCount: "88",
+        },
+        {
+            id: 2,
+            name: "Gucci duffle bag",
+            currentPrice: "$960",
+            originalPrice: "$1160",
+            image: product2Img,
+            ratingCount: "88",
+        },
+        {
+            id: 3,
+            name: "RGB liquid CPU Cooler",
+            currentPrice: "$160",
+            originalPrice: "$170",
+            image: product3Img,
+            ratingCount: "88",
+        },
+        {
+            id: 4,
+            name: "Small BookSelf",
+            currentPrice: "$260",
+            originalPrice: "$360",
+            image: product4Img,
+            ratingCount: "88",
+        },
+    ];
+
+    const handleLike = (product: ProductType) => {
+        let liked = JSON.parse(localStorage.getItem("likedProducts") || "[]");
+        liked.push(product)
+        localStorage.setItem("likedProducts", JSON.stringify(liked))
+        alert(`${product.name} LIKE saxifasiga qo‘shildi`);
+    }
+
+    const handleAddToCart = (product: ProductType) => {
+        let cart = JSON.parse(localStorage.getItem("cartProducts") || "[]");
+        cart.push(product)
+        localStorage.setItem("cartProducts", JSON.stringify(cart))
+        alert(`${product.name} CART saxifasiga qo‘shildi`);
+    };
 
     return (
         <>
@@ -87,14 +98,14 @@ function Selling() {
                             <div className="product__activates">
                                 <div className="like" onClick={() => handleLike(product)}>
                                     <img
-                                        src="./src/assets/icons/product__like.png"
+                                        src={likeIcon}
                                         alt=""
                                         className="like-icon" />
                                 </div>
 
                                 <div className="eye" onClick={() => setSelectedProduct(product)}>
                                     <img
-                                        src="./src/assets/icons/product__eye.png"
+                                        src={eyeIcon}
                                         alt=""
                                         className="eye-icon" />
                                 </div>
@@ -115,7 +126,7 @@ function Selling() {
 
                         <div className="cart__bottom">
                             <div className="product__name-price">
-                                <p className="name-p">{product.name}</p>
+                                <p className="selling-name">{product.name}</p>
                                 <div className="product__cost">
                                     <p className="current__cost">{product.currentPrice}</p>
                                     <p className="original__cost">{product.originalPrice}</p>
@@ -124,7 +135,7 @@ function Selling() {
 
                             <div className="product__rating">
                                 <img
-                                    src="./src/assets/icons/product__star.png"
+                                    src={starIcon}
                                     alt="star"
                                     className="rating-star" />
                                 <p className="rating-number">({product.ratingCount})</p>

@@ -99,6 +99,7 @@
 }
 
 .slideshow__shop{
+  list-style: none;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -106,8 +107,9 @@
 }
 
 .slide__a{
+  cursor: pointer;
   color: #f5f5f5;
-  text-decoration: underline;
+  border-bottom: 1px solid white;
 }
 
 .slide__indicator{

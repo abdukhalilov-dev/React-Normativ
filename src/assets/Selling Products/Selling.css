@@ -83,14 +83,16 @@
     border: none;
 }
 
-.name-p,
+.selling-name {
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+}
+
 .current__cost,
 .original__cost {
     font: 500 16px/24px medium;
-}
-
-.name-p {
-    color: #000;
 }
 
 .current__cost {
@@ -208,19 +210,19 @@
     border: none;
 }
 
-.selling__span-btn{
+.selling__span-btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 60px;
 }
 
-.span-text{
+.span-text {
     display: flex;
     flex-direction: column;
 }
 
-.sell-text-spa{
+.sell-text-spa {
     display: flex;
     align-items: center;
     gap: 10px;

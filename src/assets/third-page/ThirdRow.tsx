@@ -1,32 +1,34 @@
 import { useState, useEffect } from 'react';
-import './ThirdRow.css'
+import './ThirdRow.css';
+
+// Rasmlarni import qilamiz
+import appleLogo from "/src/assets/img/Apple__logo.png";
+import iphoneSlide from "/src/assets/img/slideshow__iphone.png";
+import arrowRightIcon from "/src/assets/icons/arrow-right.png";
+import toRightIcon from "/src/assets/icons/to-right-first.png";
 
 const images = [
-    "slideshow__iphone.png",
-    "slideshow__iphone.png",
-    "slideshow__iphone.png",
-    "slideshow__iphone.png",
-    "slideshow__iphone.png"
-]
+    iphoneSlide,
+    iphoneSlide,
+    iphoneSlide,
+    iphoneSlide,
+    iphoneSlide
+];
 
 function ThirdRow() {
-
-    const [currentIndex, setCurrentIndex] =
-        useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     const updateActiveSlide = (index: number) => {
-        setCurrentIndex(index)
+        setCurrentIndex(index);
     };
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-        }, 2000)
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 2000);
 
-        return () =>
-            clearInterval(interval)
+        return () => clearInterval(interval);
     }, []);
-
 
     return (
         <>
@@ -34,12 +36,12 @@ function ThirdRow() {
                 <div className="products__types">
                     <div className="for__icons">
                         <p className="products__types-texts">Woman's Fashion</p>
-                        <img src="./src/assets/icons/to-right-first.png" alt="" className="for__icons-icon" />
+                        <img src={toRightIcon} alt="" className="for__icons-icon" />
                     </div>
 
                     <div className="for__icons for__icons-second">
                         <p className="products__types-texts">Men's Fashion</p>
-                        <img src="./src/assets/icons/to-right-first.png" alt="" className="for__icons-icon" />
+                        <img src={toRightIcon} alt="" className="for__icons-icon" />
                     </div>
 
                     <p className="products__types-texts">Electronics</p>
@@ -49,14 +51,13 @@ function ThirdRow() {
                     <p className="products__types-texts">Baby's & Toys</p>
                     <p className="products__types-texts">Groceries & Pets</p>
                     <p className="products__types-texts">Health & Beauty</p>
-
                 </div>
 
                 <div className="slideshow">
                     <div className="slideshow__wrapper">
                         <div className="slideshow__text">
                             <div className="slideshow__apple">
-                                <img src="./src/assets/img/Apple__logo.png" alt="" />
+                                <img src={appleLogo} alt="Apple Logo" />
                                 <p className="slide__p">iPhone 14 Series</p>
                             </div>
                             <div className="slideshow__second-text">
@@ -68,29 +69,28 @@ function ThirdRow() {
                                         Shop Now
                                     </div>
                                 </li>
-                                <img src="./src/assets/icons/arrow-right.png" alt="" />
+                                <img src={arrowRightIcon} alt="" />
                             </div>
                         </div>
 
                         <div className="slideshow__backgorund-img">
-                            <img src="./src/assets/img/slideshow__iphone.png" alt="" />
+                            <img src={images[currentIndex]} alt="iPhone Slide" />
                         </div>
                     </div>
+
                     <div className="slide__indicator">
-                        {images.map((_, index) =>
+                        {images.map((_, index) => (
                             <span
                                 key={index}
                                 className={`slide__span ${index === currentIndex ? "slide__active" : ""}`}
                                 onClick={() => updateActiveSlide(index)}
-                            >
-                            </span>
-                        )}
+                            ></span>
+                        ))}
                     </div>
                 </div>
-
             </div>
         </>
-    )
+    );
 }
 
-export default ThirdRow
+export default ThirdRow;

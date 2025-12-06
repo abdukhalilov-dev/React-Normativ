@@ -64,5 +64,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 80px 16px 60px 16px;
+}
 
+.product__wrapper{
+    margin-bottom: 140px;
+}
+
+.wishlist-bottom{
+    margin-bottom: 0px;
 }

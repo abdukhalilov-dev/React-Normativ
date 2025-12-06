@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './LogIn.css'
+import SignImagePhone from '/src/assets/sign-image/phone.png'
 
 
 
@@ -73,7 +74,7 @@ function LogIn() {
 
 
                 <div className="sign-img">
-                    <img src="./src/assets/sign-image/phone.png" alt="" />
+                    <img src={SignImagePhone } alt="" />
                 </div>
 
                 <div className="account">

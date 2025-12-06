@@ -1,3 +1,5 @@
+/* gamepad */
+
 .main-img {
     width: 500px;
     height: 600px;
@@ -44,6 +46,35 @@
     margin-bottom: 140px;
 }
 
+.big-img {
+    width: 500px;
+    height: 600px;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+.gaming-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 60px;
+    padding-left: 10px;
+}
+
+.gaming-span {
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #DB4444;
+}
+
+.gaming-span-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #DB4444;
+}
 
 
 
@@ -285,324 +316,7 @@
     border-top: 0px solid white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* last page */
-.best-btn {
-    background-color: #DB4444;
-    padding: 16px 48px;
-    border: none;
-    border-radius: 4px;
-    color: #F5F5F5;
-    font-family: sans-serif;
-    cursor: pointer;
-}
-
-.best__btn-own {
-    margin-top: 16px;
-    margin-bottom: -20px;
-}
-
-.wrapper__best {
+.gaming-count-button {
     display: flex;
-    gap: 54px;
-    margin-bottom: 60px;
-}
-
-.best__p {
-    padding: 0;
-    margin: 0;
-    width: 105px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    color: #DB4444;
-}
-
-.best__span-p {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    width: 148px;
-    height: 40px;
-}
-
-.best__span {
-    width: 20px;
-    height: 40px;
-    background-color: #DB4444;
-    border-radius: 4px;
-    margin-right: 10px;
-}
-
-
-
-.wrapper__products {
-    display: flex;
-    gap: 30px;
-    overflow-x: scroll;
-
-}
-
-.wrapper__products::-webkit-scrollbar {
-    display: none;
-}
-
-.product::-webkit-scrollbar {
-    display: none;
-}
-
-.product__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 270px;
-    height: 250px;
-    border-radius: 4px 0px 0px 0px;
-    background-color: #F5F5F5;
-    padding: 49px;
-    margin-bottom: 16px;
-    cursor: pointer;
-}
-
-.product__discount {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    background-color: #DB4444;
-    padding: 4px 12px;
-    border-radius: 4px;
-}
-
-.product__discount-span {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    color: #F5F5F5;
-}
-
-.product__image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.product__image-eye,
-.product__image-like {
-    border-radius: 50%;
-    padding: 5px;
-    background-color: #FFFFFF;
-}
-
-.product__image-like {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-}
-
-.product__image-eye {
-    position: absolute;
-    top: 54px;
-    right: 12px;
-}
-
-.product__image-btn {
-    display: none;
-    position: absolute;
-    top: 209px;
-    bottom: 0;
-    width: 270px;
-    height: 41px;
-    border-radius: 0px 0px 4px 4px;
-    background: #000;
-    color: #fff;
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-}
-
-.product__item:hover .product__image-btn {
-    display: block;
-}
-
-.product__name-p {
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.current__price {
-    font-weight: 500;
-    line-height: 24px;
-    color: #DB4444;
-}
-
-.product__price {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.original__price {
-    font-weight: 500;
-    line-height: 24px;
-    text-decoration: line-through;
-    color: #7F7F7F;
-}
-
-.pruduct__rating {
-    display: flex;
-    gap: 8px;
-}
-
-.rating__count {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 21px;
-    color: #7F7F7F;
-}
-
-.products__btn-button {
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    background-color: #DB4444;
-    padding: 16px 48px;
-    border-radius: 4px;
-    color: #fff;
-    margin-top: 60px;
-    position: relative;
-    left: 40%;
-}
-
-.products__p-second {
-    padding: 0;
-    margin: 0;
-    width: 120px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    color: #DB4444;
-}
-
-.product__images {
-    padding-bottom: 55px;
-}
-
-.first__span {
-    width: 20px;
-    height: 20px;
-    background-color: #DB4444;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.first__span:hover {
-    border: 3.5px solid black;
-    background-color: red;
-}
-
-.pruduct__span {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 8px;
-}
-
-.second__span:hover {
-    border: 3.5px solid black;
-    background-color: yellow;
-}
-
-.third__span:hover {
-    border: 3.5px solid rgb(108, 96, 96);
-    background-color: black;
-}
-
-.fourth__span:hover {
-    border: 3.5px solid black;
-    background-color: rgb(108, 96, 96);
-}
-
-.new {
-    background-color: #00FF66;
-}
-
-.product__discount {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    background-color: #DB4444;
-    padding: 4px 12px;
-    border-radius: 4px;
-}
-
-.product__discount-span {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    color: #F5F5F5;
-}
-
-.margin {
-    margin-bottom: 60px;
-}
-
-.pad__imgs {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-/* Kichik rasmlar */
-.small__imgs img {
-    width: 170px;
-    height: 138px;
-    object-fit: cover;
-    cursor: pointer;
-    transition: .2s;
-    border-radius: 10px;
-}
-
-.small__imgs img:hover {
-    transform: scale(1.05);
-}
-
-/* Katta rasm */
-.large__img {
-    width: 500px;
-    height: 600px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.big-img {
-    width: 500px;
-    height: 600px;
-    object-fit: fill; /* Rasmni majburan joyga soladi */
-}
-
-.color-p{
-    color: #000;
+    gap: 16px;
 }
